@@ -3,42 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>祝女朋友生日快乐</title>
+    <title>亲爱的，生日快乐！</title>
     <style>
         body {
-            background-color: #f9e0e0; /* 背景颜色可以根据喜好更改 */
+            background-color: #f5f5f5;
             font-family: 'Arial', sans-serif;
             text-align: center;
             padding-top: 50px;
         }
         .container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-        }
-        .birthday-message {
-            border: 2px dashed #ff6a6a;
-            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            font-size: 24px;
-            color: #ff6a6a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            overflow: hidden;
         }
-        .heart {
-            color: red;
+        h1 {
+            color: #ff69b4;
             font-size: 3em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        p {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s 0.5s ease-in-out;
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s 0.75s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="birthday-message">
-            <h1>祝亲爱的 生日快乐 ❤️</h1>
-            <p>愿你的每一天都充满阳光与笑声，愿所有的美好和幸福永远陪伴在你左右！</p>
-            <p><span class="heart">💖</span> 爱你的，[你的名字]</p>
-        </div>
+        <img src="your-girlfriend-image.jpg" alt="亲爱的的照片">
+        <h1>亲爱的，生日快乐！</h1>
+        <p>在这个特别的日子里，愿你的笑容比阳光还要灿烂，愿你的人生如同这蛋糕上的烛光一样温馨明亮。感谢有你陪伴的日子，愿未来的岁月里我们共享更多的幸福时光，爱你，不止今天，直到永远...</p>
+        <!-- 可以在此处添加更多元素，比如动画效果、音乐播放器、礼物图片等 -->
     </div>
 </body>
 </html>
